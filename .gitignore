@@ -1,0 +1,23 @@
+# Python 虚拟环境（uv 创建的）
+python/**/.venv/
+python/**/__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Windows 批处理生成文件
+windows/bat/*.tmp
+windows/powershell/*.tmp
+
