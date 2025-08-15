@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.linkstec.newmall.mapper.G2022SelectOrgNum">
+	<select id="SelectByUserName" parameterType="String"
+		resultType="map">
+		 select  a.name1 , b.name2 from a b join c
+
+update bbbb set name = 'test'
+
+insert into aaa (id, name) values (1, 'abc')
+
+from otc142.real_table
+join lcinfo_sourc.table2
+		</select>
+		<select id="SelectByUserName1" parameterType="String"
+		resultType="map">
+		 -- 示例 SQL
+MERGE INTO user_data u USING temp_data t ON u.id = t.id;
+REPLACE INTO log_table (id, message) VALUES (1, 'ok');
+TRUNCATE TABLE old_log;
+LOCK TABLE transactions WRITE;
+DESC user_info;
+EXPLAIN SELECT * FROM sales_data;
+
+		</select>
+</mapper>

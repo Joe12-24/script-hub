@@ -20,4 +20,3 @@ Thumbs.db
 # Windows 批处理生成文件
 windows/bat/*.tmp
 windows/powershell/*.tmp
-
