@@ -62,9 +62,9 @@ def split_table_name(full_name):
 
 
 def walk_and_collect(folder):
-    table_to_files = defaultdict(set)        # (前缀, 表) -> 文件集合
-    seq_to_tables = defaultdict(set)         # 序列 -> {(前缀, 表)} 集合
-    seq_to_files = defaultdict(set)          # 序列 -> 文件集合
+    table_to_files = defaultdict(set)  # (前缀, 表) -> 文件集合
+    seq_to_tables = defaultdict(set)  # 序列 -> {(前缀, 表)} 集合
+    seq_to_files = defaultdict(set)  # 序列 -> 文件集合
 
     for root, _, files in os.walk(folder):
         for fname in files:
@@ -112,7 +112,9 @@ def save_to_excel(table_to_files, seq_to_tables, seq_to_files, output_file):
             tables_str.append((schema, bare))
         # 多表时分多行
         for schema, bare in tables_str:
-            ws2.append([seq + ".NEXTVAL", schema, bare, ", ".join(sorted(seq_to_files[seq]))])
+            ws2.append(
+                [seq + ".NEXTVAL", schema, bare, ", ".join(sorted(seq_to_files[seq]))]
+            )
 
     wb.save(output_file)
 
