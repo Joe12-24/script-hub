@@ -870,6 +870,7 @@ dependencies = [
     { name = "openai" },
     { name = "pandas" },
     { name = "requests" },
+    { name = "tenacity" },
 ]
 
 [package.metadata]
@@ -880,6 +881,7 @@ requires-dist = [
     { name = "openai", specifier = ">=1.102.0" },
     { name = "pandas", specifier = ">=2.3.2" },
     { name = "requests", specifier = ">=2.32.5" },
+    { name = "tenacity", specifier = ">=9.1.2" },
 ]
 
 [[package]]
